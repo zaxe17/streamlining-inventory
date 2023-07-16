@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("/assets/98_full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.background {
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    min-height: 100vh;
+    background: #F5F0CB;
+    box-shadow: 100px 0 200px 200px #F5F0CB;
+}
+
+.login {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 220px 100px;
+}
+
+.login h1 {
+    font-size: 90px;
+}
+
+.login button {
+    position: relative;
+    left: 35px;
+    top: 50px;
+    font-size: 24px;
+    border: none;
+    background: transparent;
+    padding: 15px 100px 15px 100px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.login button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #82B366;
+    border-left: 3px solid #82B366;
+    transition: 0.5s;
+}
+
+.login button:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.login button:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px solid #82B366;
+    border-right: 3px solid #82B366;
+    transition: 0.5s;
+}
+
+.login button:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.login button:hover {
+    background: #82B366;
+    color: #ffffff;
+    box-shadow: 0 0 60px #82B366;
+    transition-delay: 0.5s;
+}
+
+.inventory {
+    color: #DEB887;
+}
+
+header {
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+	position: fixed;
+}
+
+.logo img {
+    float: left;
+	position: relative;
+    margin-top: 50px;
+	margin-left: -50px;
+	width: 100px;
+	-webkit-user-drag: none;
+}
+
+.nav-bar ul {
+	font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #ffebd7;
+    font-size: 25px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0 5px;  
+}
+
+.nav-bar ul li a:hover {
+    background: rgba(130, 179, 102, 0.5);
+	text-shadow: 0 0 0 15px #82B366;
+}
+
+.nav-bar.scrolled a {
+    color: #333;
+    transition: all 0.5s;
+}
+
+#section1 {
+    width: 40%;
+    height: 100vh;
+    background: #F5F0CB;
+    box-shadow: 100px 0 200px 200px #F5F0CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.inner-section {
+    margin-left: 10%;
+    background-color: #EDE9E8;
+    padding: 100px;
+    box-shadow: -15px 15px 8px rgba(0,0,0,0.3);
+  }
+.inner-section h1{
+    color: #82B366;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 20px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+footer {
+    background: #9B7653;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+}
+
+.socialIcons a i {
+    padding: 15px;
+    background: #82B366;
+    margin: 10px 30px;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a i:hover {
+    color: #82B366;
+    transition: 0.5s;
+    background: #9B7653;
+}
+
+.footNav {
+    margin: 30px 0;
+}
+
+.footNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #976c43;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.name {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

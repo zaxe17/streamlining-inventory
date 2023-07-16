@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/98_full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.logo img {
+    z-index: 1111;
+    float: left;
+	position: relative;
+    margin-top: 25px;
+	margin-left: 50px;
+	width: 100px;
+	-webkit-user-drag: none;
+    position: fixed;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    min-height: 100vh;
+    background: #F5F0CB;
+    box-shadow: 100px 0 200px 200px #F5F0CB;
+}
+
+.background .login {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 220px 150px;
+}
+
+.background .login h1 {
+    color: #DEB887;
+    padding-bottom: 30px;
+    font-size: 90px;
+}
+
+form input {
+    color: black;
+    margin: 0;
+	width: 60%;
+	height: 50px;
+	margin: 4px 0;
+	border: 1px solid #5c5c5c;
+	border-radius: 3px;
+	background: #ffffff;
+	padding: 0 15px;
+	padding-right: 45px;
+	font-size: 20px;
+    background: none;
+}
+
+form .button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    width: 60%;
+    align-items: center;
+    align-content: center;
+    transition: 0.5s;
+}
+
+form input:focus {
+	border: 1px solid #f5d9be;
+	transition: all 0.3s ease;
+}
+
+form input:focus::placeholder {
+	padding-left: 4px;
+	transition: all 0.3s ease;
+}
+
+form .button:hover {
+    color: #FFEBCD;
+    border: 1px solid #82B366;
+    background: #82B366;
+}
+
+form select {
+    color: black;
+	width: 60%;
+	height: 50px;
+	margin: 4px 0;
+	border: 1px solid #5c5c5c;
+	border-radius: 3px;
+	background: none;
+	padding: 0 15px;
+	padding-right: 45px;
+	font-size: 20px;
+}
+
+form option {
+    color: #82B366;
+    background: rgba(255, 235, 205, 0.5);
+}
+
+form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 20px;
+    padding:10px;
+ }
